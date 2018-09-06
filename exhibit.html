@@ -1,0 +1,117 @@
+<!--
+Zaryab Farooq
+Kirtanpal Ghoman
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Exhibition at Manetti Shrem Museum</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="exhibit.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700" rel="stylesheet">
+</head>
+
+<body>
+	<nav class = "navbar">
+
+		<div class = "header">
+			<b id = "mainTitle">WAYNE THIEBAUD </b>
+			<small id = "description">Exhibition at Manetti Shrem Museum </small>
+		</div>
+
+		<div class = "Links">
+				<a id = "home" href="#">HOME  </a>
+				<a class = "small"> | </a>
+				<a href="#">ABOUT  </a>
+				<a class = "small" > | </a>
+				<a href="#">CONTACT</a>
+		</div>
+	</nav>
+
+	<div class="mainBody">
+		<div class="screen">
+			<div class="text" >
+				<b> Open until May 13 <small class = "small"> | free to the public </small></b>
+				<small class = "medium-large"><br/> free to the public <br/> </small>
+				<b class = "medium-large"> __ </b>
+
+				<p> At an extraordinary historical moment, Wayne Thiebaud proposed a radical new take on painting, and he did so with a slice of pie. This exhibition invites viewers to trace Thiebaud’s emergence as a mature artist with a singular style. The first exhibition to explore this formative period, Wayne Thiebaud | 1958–1968 brings together more than 60 early paintings gathered from private collections and museums throughout the United States.</p>
+			</div>
+			<div id = "toggleImage" class="enlargeImage large">
+				<img src="exhibitAssets/Wind Toys, 1962. oil on canvas.jpg" alt="Wind_Toys">
+				<b>Wind Toys <small>(1962. oil on canvas)</small></b>
+			</div>
+		</div>
+		<div class="painting">
+			<div class="twopainting">
+				<div onclick="changeImage(this)" class="singlePainting">
+					<img  src="exhibitAssets/Wind Toys, 1962. oil on canvas.jpg" alt="Wind_Toys">
+					<b class="medium-small">Wind Toys <small class="small">(1962. oil on canvas)</small></b>
+					<small class = "medium"> <br/> (1962. oil on canvas)</small>
+				</div>
+				<div onclick="changeImage(this)" class="singlePainting">
+					<img src="exhibitAssets/Pancake Breakfast, 2008. oil on canvas.jpg" alt="Wind_Toys">
+					<b class ="medium-small">Pancake Breakfast <small class="small">(2008. oil on canvas)</small></b>
+					<small class = "medium"> <br/> (2008. oil on canvas)</small>
+				</div>
+			</div>
+
+			<div class="twopainting">
+				<div onclick="changeImage(this)" class="singlePainting">
+					<img src="exhibitAssets/Around the Cake, 1962, oil on canvas.jpg" alt="Wind_Toys">
+					<b class="medium-small">Around the Cake <small class="small">(1962. oil on canvas)</small></b>
+					<small class = "medium"><br/>(1962. oil on canvas)</small>
+				</div>
+				<div onclick="changeImage(this)" class="singlePainting">
+					<img src="exhibitAssets/Three Machines, 1963. oil on canvas.jpg" alt="Wind_Toys">
+					<b class="medium-small">Three Machines <small class="small">(1962. oil on canvas)</small> </b>
+					<small class = "medium"><br/>(1963. oil on canvas)</small>
+				</div>
+
+			</div>
+
+			<div class="twopainting">
+				<div onclick="changeImage(this)" class="singlePainting">
+					<img src="exhibitAssets/Boston Creems, 1962. oil on canvas.jpg" alt="Wind_Toys">
+					<b class="medium-small"> Boston Cremes <small class="small">(1962. oil on canvas)</small></b>
+					<small class = "medium"><br/>(1962. oil on canvas)</small>
+				</div>
+				<div onclick="changeImage(this)" class="singlePainting">
+					<img src="exhibitAssets/Bananas, 1963. Oil on canvas.jpg" alt="Wind_Toys">
+					<b class="medium-small">Bananas <small class="small">(1962. oil on canvas)</small></b>
+					<small class = "medium"><br/>(1963. oil on canvas)</small>
+				</div>
+			</div>
+			</div>
+	</div>
+
+	<nav class = "navbar footer">
+
+		<div class = "left">
+			<p id = "name"> Manetti Shrem Museum </p>
+			<br/>
+			<p>	254 Old Davis Rd </p>
+			<p>	Davis, CA 95616 </p>
+			<p>	(530) 752-8500 </p>
+
+		</div>
+
+		<div class = "right">
+			<p>Hours</p>
+			<br/>
+			<p>Closed Monday</p>
+			<p>Open Tuesday–Friday 12 am – 6 pm</p>
+			<p>Open Saturday-Sunday 11 am – 5 pm</p>
+		</div>
+	</nav>
+
+	<script>
+            function changeImage(imageDiv)
+            {
+                    document.getElementById("toggleImage").children[0].src = imageDiv.children[0].src;
+				document.getElementById("toggleImage").children[1].innerHTML = imageDiv.children[1].innerHTML;
+				document.getElementById("toggleImage").children[1].children[0].classList.remove("small");
+            }
+        </script>
+</body>
+</html>
